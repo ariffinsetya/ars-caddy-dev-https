@@ -1,0 +1,13 @@
+example.com { # your hostname
+    log stdout
+    # Mkcert - https://github.com/FiloSottile/mkcert
+    # change the example.com+1.pem & example.com+1-key.pem with your correct filename from mkcert
+    tls /root/certs/example.com+1.pem /root/certs/example.com+1-key.pem
+
+    # change the port with your configured port e.g 8080,3000,9000
+    proxy / host.docker.internal:9000 {
+        transparent
+        # change the example.com with your hostname
+        header_upstream Host  "example.com"
+    }
+}

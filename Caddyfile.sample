@@ -1,0 +1,10 @@
+alan.dev {
+    log stdout
+    # Mkcert - https://github.com/FiloSottile/mkcert
+    tls /root/certs/alan.dev+1.pem /root/certs/alan.dev+1-key.pem
+
+    proxy / host.docker.internal:9000 {
+        transparent
+        header_upstream Host  "alan.dev"
+    }
+}

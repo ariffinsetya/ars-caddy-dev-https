@@ -1,0 +1,5 @@
+mkcert
+certs/portainer.dev+1-key.pem
+certs/portainer.dev+1.pem
+certs/vidio.test+1-key.pem
+certs/vidio.test+1.pem

@@ -5,6 +5,7 @@ simple local https setup for development purpose
 ## Prerequisite
 * [mkcert](https://github.com/FiloSottile/mkcert)
 * [docker](https://docs.docker.com/get-docker/)
+* docker-compose
 
 ## Step by Step
 1. Install mkcert `mkcert -install`
@@ -16,4 +17,4 @@ simple local https setup for development purpose
   * there is some working example in Caddyfile.sample
     * hostname = alan.dev, with app running on port 9000 
 4. Run `docker-compose up` and it's done!
-  * PS the docker-compose is configured to always restart so you won't need to redo this, and your `https://example.com` can be accessed everytime you startup your machine
+  * PS the container is configured to always restart so you won't need to redo this, and your `https://example.com` can be accessed everytime you startup your machine

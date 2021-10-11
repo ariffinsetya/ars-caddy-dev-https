@@ -1,5 +1,5 @@
 # ars-caddy-dev-https
-simple local https setup for development purpose
+simple local https setup for development purpose based on docker, caddy, and mkcert
 
 # How to use
 ## Prerequisite

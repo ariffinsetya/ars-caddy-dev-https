@@ -18,4 +18,4 @@ simple local https setup for development purpose
   * there is some working example in Caddyfile.sample
     * hostname = alan.dev, with app running on port 9000 
 5. Run `docker-compose up` and it's done!
-  * PS the container is configured to always restart so you won't need to redo this, and your `https://example.com` can be accessed everytime you startup your machine
+  * PS the container is configured to always restart so you won't need to redo this, and your `https://example.com` can be accessed everytime you startup your machine, make sure your app is running on the configured port!

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  caddy:
+  ars-caddy-dev-https:
     image: "abiosoft/caddy:latest"
     volumes:
       - ./certs:/root/certs # to sync mkcert certificates to Caddy
